@@ -2,6 +2,7 @@ import React from 'react'
 import Designodata from './../data/designodata/Designodata';
 import { CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
+import { NavLink, Outlet } from 'react-router-dom';
 function Navber() {
   return (
     <div className=' '>
@@ -49,7 +50,7 @@ function Navber() {
                              {data.icon}
                             </div>
                              <div>
-                             <a className=' font-inter font-medium size-3' href={data.path}> {data.label}</a>
+                             <NavLink className=' font-inter font-medium size-3' to={data.path}> {data.label}</NavLink>
                              </div>
                         </div>
                             
@@ -60,8 +61,11 @@ function Navber() {
         </div>
 
 
-
+       <div>
+        {<Outlet/>}
+       </div>
     </div>
+   
   )
 }
 
