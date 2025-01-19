@@ -4,6 +4,7 @@ import Recent from '../component/Dashboard/Recent-course'
 import { MdColorize } from "react-icons/md";
 import Png from '../component/Dashboard/Png';
 
+
 function Deshboard() {
   return (
     <div className=' container py-4'>
@@ -48,7 +49,9 @@ function Deshboard() {
               </div>
             </div>
             {/* colam 2 */}
-            <div></div>
+            <div>
+             
+            </div>
             {/* colam 3 */}
             <div></div>
          </div>

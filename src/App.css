@@ -35,7 +35,7 @@
     /* navber section end */
 
     /* Assignments section start */
-    /* .Assignments_title{
+    .Assignments_title{
         @apply font-medium text-[26px] md:text-[32px] leading-[38px] text-wrap text-[#211C37];
     }
     .Assignments_p{
@@ -43,5 +43,5 @@
     }
     .Assignments_CiSearch{
         @apply w-[32px] h-[31px] rounded-lg border border-white flex justify-center items-center shadow-md;
-    } */
+    }
 }

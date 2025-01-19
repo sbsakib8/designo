@@ -10,12 +10,11 @@ function Navber() {
    const togglemenu = () => {
        setopenmanu(!openmanu);
    }
-    console.log(openmanu);
   return (
     <div className=' w-full'>
       <div className=' flex w-full' >
         {/* slideber  */}
-        <div className={`w-[223px] h-screen bg-gray-600   ${openmanu ? 'hidden' : 'block'} transition-all duration-500 ease-in-out`}>
+        <div className={`w-[223px] h-screen bg-navber   ${openmanu ? 'hidden' : 'block'} transition-all duration-500 ease-in-out`}>
         <div className=' mt-5 px-2'>
                 <img src="img/designo.png" alt="" />
                 
@@ -44,7 +43,7 @@ function Navber() {
         <div className=' w-full '>
 
           {/* top ber */}
-         <div className='w-full h-20 bg-gray-400 p-3 flex flex-1 justify-between gap-5'> 
+         <div className='w-full h-20 bg-white p-3 flex flex-1 justify-between gap-5'> 
             <div onClick={togglemenu} className=' md:hidden flex items-center cursor-pointer '>
               <RxHamburgerMenu className='text-[27px]'/>
             </div>

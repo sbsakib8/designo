@@ -1,4 +1,4 @@
-const Assignmentsdata =[
+const Assignmentdata =[
     {
         title: 'Conducting User Research',
         course: 'User Research and Personas',
@@ -42,3 +42,4 @@ const Assignmentsdata =[
         Submit: 'Upload'
     },
 ]
+export default Assignmentdata;
