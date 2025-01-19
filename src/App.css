@@ -2,24 +2,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
 @layer base {
   body {
-    @apply font-inter;
+    @apply font-inter w-full;
+
   }
 }
 
 @layer utilities{
     /* navber section start */
     .top_nav{
-        @apply w-full h-[65px] flex justify-between items-center px-6 flex-1 gap-3 md:absolute shadow-sm ;
+        @apply w-full h-[65px] flex justify-between items-center px-6 flex-1 gap-3 bg-green-400  shadow-sm ;
     }
     .input_main_div{
-        @apply py-2 px-3 w-[200px] max-w-[334px] rounded-md border-2 border-primary flex items-center gap-x-2 flex-1 md:left-60 md:relative ;
+        @apply py-1 px-2 md:px-3 w-[30px] lg:w-[200px] max-w-[334px] rounded-md border-2 border-primary flex items-center gap-x-2 flex-1 ;
     }
 
     .input{
-        @apply  focus:outline-none active:outline-none flex flex-1 w-[100px];
+        @apply  focus:outline-none active:outline-none flex flex-1  w-7 md:w-[100px];
     }
     .notification_div{
         @apply w-[32px] h-[31px] rounded-lg border border-white flex justify-center items-center;
@@ -28,4 +33,15 @@
         @apply flex  items-center gap-x-3 mt-1 hover:bg-primary hover:text-white rounded-md p-2 transition-all duration-300 cursor-pointer ;
     }
     /* navber section end */
+
+    /* Assignments section start */
+    /* .Assignments_title{
+        @apply font-medium text-[26px] md:text-[32px] leading-[38px] text-wrap text-[#211C37];
+    }
+    .Assignments_p{
+        @apply text-[#85878D] text-[20px] md:text-[18px] leading-[24px] mt-2;
+    }
+    .Assignments_CiSearch{
+        @apply w-[32px] h-[31px] rounded-lg border border-white flex justify-center items-center shadow-md;
+    } */
 }
