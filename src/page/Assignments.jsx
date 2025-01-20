@@ -67,7 +67,7 @@ function Assignments() {
           </div>
           <div> <Paginations/></div>
         </div>
-
+      
       </div>
    </div>
   )

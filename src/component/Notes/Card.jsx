@@ -5,9 +5,9 @@ import { div } from "framer-motion/client";
   return (
     <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
         {
-            Notesdata.slice(0,3).map((data,index)=>{
+            Notesdata.slice(0,3).map((data)=>{
                 return(
-                    <Card key={index} className="max-w-[400px] ">
+                    <Card key={data.id} className="max-w-[400px] ">
       <CardHeader className="flex gap-3">
         
         <div className="flex gap-3">

@@ -3,6 +3,10 @@ import Calendars from '../component/Dashboard/Calendar'
 import Recent from '../component/Dashboard/Recent-course'
 import { MdColorize } from "react-icons/md";
 import Png from '../component/Dashboard/Png';
+import Hours from '../component/Dashboard/Hours';
+import Performance from '../component/Dashboard/Performance';
+
+
 
 
 function Deshboard() {
@@ -49,11 +53,23 @@ function Deshboard() {
               </div>
             </div>
             {/* colam 2 */}
-            <div>
-             
+            <div className=' flex'>
+              {/* row 1 */}
+            <div className=' w-[314px] h-[212px]'>
+              <Hours/>
+              </div>
+              {/* row 2 */}
+              <div  className=' w-[314px] h-[212px]'>
+               <Performance/>
+              </div>
+              {/* row 3 */}
+              <div className=' w-[314px] h-[212px] p-24'>
+                
+              </div>
             </div>
             {/* colam 3 */}
             <div></div>
+            
          </div>
         
     </div>
