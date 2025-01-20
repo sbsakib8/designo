@@ -31,7 +31,7 @@ function Hours() {
         ]
       };
   return (
-    <div>
+    <div className=' w-[300px] h-[200px] border-1 border-paragraphColor '>
         <ReactECharts option={option} />
     </div>
   )

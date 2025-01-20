@@ -5,6 +5,7 @@ import { MdColorize } from "react-icons/md";
 import Png from '../component/Dashboard/Png';
 import Hours from '../component/Dashboard/Hours';
 import Performance from '../component/Dashboard/Performance';
+import Todolist from '../component/Dashboard/Todolist';
 
 
 
@@ -15,11 +16,11 @@ function Deshboard() {
          <h3>Hello Harsh 👋🏻</h3>
          <p>Lets learn something new today!</p>
 {/* main div */}
-         <div className='w-full mt-5'>
+         <div className='w-full mt-5 '>
           {/* colam 1 */}
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center '>
               {/* row 1 */}
-              <div className='border-1 border-[#E4E4E4] shadow-md  w-[300px] h-[208px] rounded-lg py-5 px-3'>
+              <div className='border-1 border-[#E4E4E4] shadow-md  w-[300px] h-[250px] rounded-lg py-5 px-3'>
                 <h3 className='my-3'>Recent enrolled course</h3>
                <div className='py-5 px-3 border-1 border-[#E4E4E4] rounded-lg space-y-3 '> 
                <p className='w-[27px] h-[28px] shadow-md rounded-md flex justify-center items-center'><MdColorize/></p>
@@ -28,7 +29,7 @@ function Deshboard() {
                </div>
               </div>
               {/* row 2 */}
-              <div  className=' shadow-md rounded-lg  py-4 px-5 bg-white border-1 border-[#E4E4E4] w-[309px] h-[208px] flex flex-col justify-between'>
+              <div  className=' shadow-md rounded-lg  py-4 px-5 bg-white border-1 border-[#E4E4E4] w-[309px] h-[250px] flex flex-col justify-between'>
                <h4>Your Resources</h4>
     {/* png upload div */}
                <div className='flex justify-between items-center gap-3 mt-3'>
@@ -53,18 +54,20 @@ function Deshboard() {
               </div>
             </div>
             {/* colam 2 */}
-            <div className=' flex'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center mt-6 '>
               {/* row 1 */}
-            <div className=' w-[314px] h-[212px]'>
+            <div className=' w-[350px] h-[271px] shadow-lg px-5'>
+              <h5 className=" font-semibold text-[16px]">Hours Spent</h5>
               <Hours/>
               </div>
               {/* row 2 */}
-              <div  className=' w-[314px] h-[212px]'>
+              <div  className=' w-[240px] h-[271px] shadow-lg py-6 px-3'>
+                <h4 className=" font-semibold text-[16px]">Performance</h4>
                <Performance/>
               </div>
               {/* row 3 */}
-              <div className=' w-[314px] h-[212px] p-24'>
-                
+              <div className=' w-[288px] h-[271px] shadow-lg'>
+                <Todolist/>
               </div>
             </div>
             {/* colam 3 */}
