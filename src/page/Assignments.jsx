@@ -5,7 +5,7 @@ import Assignmentdata from '../data/assignmentsdata/Assigntdata';
 import Paginations from '../component/Assignment/Pagination';
 function Assignments() {
   return (
-   <div className=' container '>
+   <div className=' container snap-y-auto overflow-y-auto'>
     {/* main div */}
       <div className='w-full mt-5'>
         {/* child 1 */}
@@ -24,7 +24,7 @@ function Assignments() {
         {/* child 2 */}
         <div className='w-full mt-7'>
           
-        <div>
+        <div className='snap-x-auto overflow-x-auto'>
           <table className='lg:w-full'>
              <thead>
                 <tr className=' bg-gray-300 mt-2 p-10 border-1 border-gray-300'>

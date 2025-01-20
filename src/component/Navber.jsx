@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { NavLink, Outlet } from 'react-router-dom';
+import { div } from 'framer-motion/client';
 
 function Navber() {
    const [openmanu ,setopenmanu] =useState(false);
@@ -11,8 +12,9 @@ function Navber() {
        setopenmanu(!openmanu);
    }
   return (
-    <div className=' w-full'>
-      <div className=' flex w-full' >
+    <div>
+      <div className=' w-full snap-y-auto overflow-y-auto'>
+      <div className=' flex w-full fixed z-20 ' >
         {/* slideber  */}
         <div className={`w-[223px] h-screen bg-navber   ${openmanu ? 'hidden' : 'block'} transition-all duration-500 ease-in-out`}>
         <div className=' mt-5 px-2'>
@@ -44,11 +46,11 @@ function Navber() {
 
           {/* top ber */}
          <div className='w-full h-20 bg-white p-3 flex flex-1 justify-between gap-5'> 
-            <div onClick={togglemenu} className=' md:hidden flex items-center cursor-pointer '>
+            <div onClick={togglemenu} className=' flex items-center cursor-pointer '>
               <RxHamburgerMenu className='text-[27px]'/>
             </div>
 
-            <div className='input_main_div '>
+            <div className='input_main_div'>
             <CiSearch  className=' text-primary text-[24px] '/>
                 <input className='input' type="text" placeholder='Search...' />
             </div>
@@ -73,9 +75,13 @@ function Navber() {
 
          </div>
          
-          <div className=' w-full'> <Outlet/></div>
+        
         </div>
+       
       </div>
+      
+    </div>
+    <div className=' w-full py-24'> <Outlet/></div>
     </div>
   )
 }

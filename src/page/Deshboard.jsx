@@ -7,7 +7,7 @@ import Png from '../component/Dashboard/Png';
 
 function Deshboard() {
   return (
-    <div className=' container py-4'>
+    <div className=' container py-4 snap-y-auto overflow-y-auto'>
          <h3>Hello Harsh 👋🏻</h3>
          <p>Lets learn something new today!</p>
 {/* main div */}
@@ -55,7 +55,7 @@ function Deshboard() {
             {/* colam 3 */}
             <div></div>
          </div>
-
+        
     </div>
   )
 }
