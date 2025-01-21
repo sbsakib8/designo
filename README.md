@@ -1,4 +1,4 @@
-this dachboard created with
+this dachboard is created with
 &:- react js
 &:- tailwind css 
 &:- HeroUI 
