@@ -15,10 +15,10 @@ import { FaRegFileAlt } from "react-icons/fa";
 
 function Deshboard() {
   return (
-    <div className=' container py-4 snap-y-auto overflow-y-auto'>
+    <div className=' container py-4 snap-y-auto overflow-y-auto relative '>
          <h3 className=' font-bold text-[33px] text-[#211C37]'>Hello Harsh 👋🏻</h3>
          <p className=' font-normal text-[20px] text-paragraphColor leading-[24px]'>Lets learn something new today!</p>
-{/* main div */}
+{/* main div */} 
          <div className='w-full mt-5 '>
           {/* colam 1 */}
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center '>
@@ -57,7 +57,7 @@ function Deshboard() {
               </div>
             </div>
             {/* colam 2 */}
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center mt-6 '>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full justify-items-center mt-6'>
               {/* row 1 */}
             <div className=' w-[350px] h-[271px] shadow-lg px-5 border-1 border-gray-200'>
               <h5 className=" font-semibold text-[16px]">Hours Spent</h5>

@@ -21,7 +21,7 @@ function Notes() {
             <CiFilter />
             <button>Filter </button>
             </div>
-          <div className='notes_button add_notes'>
+          <div className='notes_button add_notes cursor-pointer'>
             <IoIosAdd  className=' w-4 h-10'/>
             <button>ADD NOTES</button>
             </div>

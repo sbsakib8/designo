@@ -38,7 +38,7 @@ function Assignments() {
              {
               Assignmentdata.map((data)=>{
                   return(
-                    <tbody> 
+                    <tbody key={data.id}> 
                     <tr className='border-1 border-gray-300'>
                      <td >{data.title}</td>
                      <td>{data.course}</td>
@@ -58,7 +58,7 @@ function Assignments() {
         <div className='w-full mt-9 gap-4 flex flex-col lg:flex-row justify-between'>
           <div className='flex gap-x-3 items-center'> 
             <p>Show</p>
-            <select className='border-1 border-gray-300 p-2'>
+            <select className='border-1 border-gray-300 p-2 cursor-pointer'>
               <option>10</option>
               <option>20</option>
               <option>30</option>
